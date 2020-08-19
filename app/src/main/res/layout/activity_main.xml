@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/camera_capture_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/custom_size__1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="2dp" />
+
+    <ImageButton
+        android:id="@+id/flipcam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="50dp"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/rotateer" />
+
+    <ImageButton
+        android:id="@+id/photos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginRight="50dp"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/photosee" />
+
+
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.camera.view.PreviewView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
